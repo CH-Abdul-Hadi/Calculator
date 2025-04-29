@@ -1,78 +1,107 @@
 
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #1d4350; 
+  background: -webkit-linear-gradient(
+    to right,
+    #a43931,
+    #1d4350
+  ); 
+  background: linear-gradient(
+    to right,
+    #a43931,
+    #1d4350
+  ); 
+
+  font-family: "Poppins", sans-serif;
+}
+.mainHeading{
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
 }
 
 .calculator {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    width: 300px;
+  padding: 20px;
+  width: 300px;
+  background: rgba(24, 12, 12, 0.41);
+  border: 1px solid rgba(24, 12, 12, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
 }
 
 .display {
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: right;
-    font-size: 24px;
-    height: 40px;
-    overflow: hidden;
+  background-color: transparent;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 24px;
+  height: 30px;
+  overflow: hidden;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 button {
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #4d4d4d;
-    color: white;
-    transition: background-color 0.2s;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #07070700;
+  color: wheat;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
-    background-color: #666;
+  background-color: #666;
 }
 
 button:active {
-    background-color: #555;
+  background-color: #555;
 }
 
 .operator {
-    background-color: #f39c12;
+  background-color: #f39d1200;
 }
 
 .operator:hover {
-    background-color: #e67e22;
+  background-color: #e67e22;
 }
 
 .clear {
-    background-color: #e74c3c;
+  background-color: #e74d3c00;
 }
 
 .clear:hover {
-    background-color: #c0392b;
+  background-color: #bd2a1a;
 }
 
 .equals {
-    background-color: #2ecc71;
+  background-color: #2ecc7000;
 }
 
 .equals:hover {
-    background-color: #27ae60;
+  background-color: #114d2ab0;
 }
